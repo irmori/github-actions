@@ -1,0 +1,25 @@
+name: iris
+Age: 32
+adress: "hasav:11"
+active: true
+key:
+    key: value
+    key2: 33
+    key3:
+        key: value
+        key2: Value2
+JsonObject: {key: value, key2: 33,key3: {key: value, key2: Value2}}
+array:
+    -item1
+    -item2
+jsonArray: [item1, item2]
+objectsArray:
+    - key: value
+      key2: Value2
+    - key: value
+      key2: Value2
+longtext: |
+    jdkfjsldfjsd psdfjsdifjsdli
+    lsdf sdf lsdfjsdlfsd 
+    sljidfjlsdijfsdl  sdfjkdjfsdif
+    sdifjsdofhsdf sdif sojhkhkjhk 
