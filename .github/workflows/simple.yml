@@ -1,21 +1,20 @@
-{
-  "name": "shell Commands",
-  "on": [
-    "push"
-  ],
-  "jobs": {
-    "run-shell-command": {
-      "runs-on": "ubuntu-latest",
-      "steps": [
-        {
-          "name": "echo a string",
-          "run": "echo \"Hellow world\""
-        },
-        {
-          "name": "multiline script",
-          "run": "node -v\nnpm -v\n"
-        }
-      ]
-    }
-  }
-}
+name: 'shell Commands'
+on:
+    - push
+jobs:
+    run-shell-command:
+        runs-on: ubuntu-latest
+        steps:
+            -
+                name: 'echo a string'
+                run: 'echo "Hellow world"'
+            -
+                name: 'multiline script'
+                run: "node -v\nnpm -v\n"
+
+            -   name: python Command
+                run: |
+                  import platform
+                  print
+                  (platform.processor())
+                shell: python 
